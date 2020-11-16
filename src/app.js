@@ -12,11 +12,11 @@ async function main(){
     app.use(morgan('dev'));
     app.use(corsa());
     app.use(myConnection(mysql, {
-        host: 'localhost',
-        user: 'manolo',
-        password: '123M',
-        port: 3306,
-        database: 'fotos'
+        host: '',
+        user: '',
+        password: '',
+        port: ,
+        database: ''
       }, 'single'));
     app.use('/storage',express.static(path.join(__dirname, '/storage')));
     app.use(express.urlencoded({extended: false}));
